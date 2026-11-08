@@ -1,5 +1,18 @@
+# Roadmap
+This is just a plan of what I want to do
+
+- Lowest Level: DiskManager 
+  - Read/Write pages
+  - Header stores, database name which links to catalog?
+    - Can we store this information in the header?
+    - But we already know which database file to read
+  - Need catalog to know the size of each tuple
+- Highest Level: SQL parser
+  - SQL parser where user able to SELECT from TABLE, need metadata to store TABLE is in which file
+    - Maybe we can just use the table name as the file name for now
+
 # Introduction
-This is my implementation of a row-oriented database from scratch where we read the raw bytes from a file and translate it into a tuple
+This is my implementation of a row-oriented database from scratch where we read the raw bytes from a file and translate it into a tuple. I plan to make this a hybrid database that user is able to specify they want to store data as column store, similar to the SingleStore database. 
 
 ## Overall Architecture
 
