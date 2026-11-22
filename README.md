@@ -11,6 +11,10 @@ This is just a plan of what I want to do
   - SQL parser where user able to SELECT from TABLE, need metadata to store TABLE is in which file
     - Maybe we can just use the table name as the file name for now
 
+# To Do List
+- DiskManager 
+  - READ/WRITE Page
+
 # Introduction
 This is my implementation of a row-oriented database from scratch where we read the raw bytes from a file and translate it into a tuple. I plan to make this a hybrid database that user is able to specify they want to store data as column store, similar to the SingleStore database. 
 
